@@ -111,7 +111,7 @@ function drawClock() {
 
 	var sAngle = s * Math.PI / 30 - Math.PI / 2;
 	var mAngle = m * Math.PI / 30 - Math.PI / 2;
-	var hAngle = h * Math.PI / 40 + Math.PI / 2;
+	var hAngle = (h * Math.PI / 6) + (m * Math.PI / 360) - Math.PI / 2;
 
 	c.strokeStyle = "#000";
 	c.lineWidth = "2";
